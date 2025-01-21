@@ -183,6 +183,9 @@ async function main() {
   );
   const stats = statsStr.toLowerCase().split(" ");
 
+  const numCombinationsStr = await askQuestion("How many top combinations do you want to see? ");
+  const numCombinations = parseInt(numCombinationsStr, 10);
+
   const bestCombinations = findArmorCombinations(
     maxEquipLoad,
     currentEquipLoad,
@@ -192,9 +195,10 @@ async function main() {
   );
 
   if (bestCombinations.length > 0) {
-    console.log(`\nArmor Combinations (Ranked by ${stats.join(", ")}):`);
-    for (const { combination, statScores, headroom } of bestCombinations) {
-      console.log(`\nCombination:`);
+    console.log(`\nTop ${numCombinations} Armor Combinations (Ranked by ${stats.join(", ")}):`);
+    for (let i = 0; i < Math.min(numCombinations, bestCombinations.length); i++) {
+      const { combination, statScores, headroom } = bestCombinations[i];
+      console.log(`\nCombination ${i + 1}:`);
       combination.forEach((piece) => {
         const pieceStats = Object.entries(piece)
           .filter(([key]) => key !== 'name')
