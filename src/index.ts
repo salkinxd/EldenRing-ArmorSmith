@@ -1,6 +1,6 @@
 import { createInterface } from 'readline';
 
-// Data (You'll need to fill this in with actual game data)
+// Data
 interface ArmorPiece {
   name: string;
   weight: number;
@@ -14,7 +14,6 @@ interface ArmorData {
   legs: ArmorPiece[];
 }
 
-// Load your armor data from a JSON file or define it directly in the code
 const armorData: ArmorData = require('./armorData.json');
 
 // Roll Types
@@ -24,13 +23,12 @@ enum RollType {
   Heavy,
 }
 
-// User Input Interface
+// User Input
 const rl = createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-// Function to ask the user a question
 function askQuestion(question: string): Promise<string> {
   return new Promise((resolve) => {
     rl.question(question, (answer) => {
@@ -39,20 +37,20 @@ function askQuestion(question: string): Promise<string> {
   });
 }
 
-// Function to filter armor pieces based on user preferences
+// Function to filter armor pieces
 function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number): ArmorPiece[] {
     return pieces.filter(piece => piece.weight <= maxWeight);
 }
 
-// Function to find the best armor combinations
-function findBestArmorCombinations(
+// Function to find armor combinations
+function findArmorCombinations(
   availableLoad: number,
   includedTypes: string[],
   rollType: RollType
 ): ArmorPiece[][] {
-  const topCombinations: { combination: ArmorPiece[]; totalPoise: number }[] = [];
+  const combinations: { combination: ArmorPiece[]; totalPoise: number }[] = [];
 
-  // Generate all possible combinations based on includedTypes
+  // Generate combinations recursively
   const generateCombinations = (
     types: string[],
     currentCombination: ArmorPiece[],
@@ -77,12 +75,7 @@ function findBestArmorCombinations(
       }
 
       if (isWeightValid) {
-        // Add to topCombinations, maintaining top 5
-        topCombinations.push({ combination: [...currentCombination], totalPoise });
-        topCombinations.sort((a, b) => b.totalPoise - a.totalPoise);
-        if (topCombinations.length > 5) {
-          topCombinations.pop(); // Keep only top 5
-        }
+        combinations.push({ combination: [...currentCombination], totalPoise });
       }
       return;
     }
@@ -113,8 +106,20 @@ function findBestArmorCombinations(
 
   generateCombinations(includedTypes, [], 0);
 
-  // Extract the armor combinations from the sorted results
-  return topCombinations.map((result) => result.combination);
+  // Group combinations by poise
+  const combinationsByPoise: { [poise: number]: ArmorPiece[][] } = {};
+  for (const { combination, totalPoise } of combinations) {
+    if (!combinationsByPoise[totalPoise]) {
+      combinationsByPoise[totalPoise] = [];
+    }
+    combinationsByPoise[totalPoise].push(combination);
+  }
+
+  // Find the highest poise
+  const highestPoise = Math.max(...Object.keys(combinationsByPoise).map(Number));
+
+  // Return all combinations with the highest poise
+  return combinationsByPoise[highestPoise] || [];
 }
 
 // Main function
@@ -149,14 +154,14 @@ async function main() {
       rollType = RollType.Medium;
   }
 
-  const bestCombinations = findBestArmorCombinations(
+  const bestCombinations = findArmorCombinations(
     availableLoad,
     includedTypes,
     rollType
   );
 
   if (bestCombinations.length > 0) {
-    console.log("\nTop 5 Armor Combinations:");
+    console.log("\nArmor Combinations with Highest Poise:");
     bestCombinations.forEach((combination, index) => {
       console.log(`\nCombination ${index + 1}:`);
       combination.forEach((piece) => {
