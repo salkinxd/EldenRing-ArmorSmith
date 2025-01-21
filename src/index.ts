@@ -4,6 +4,7 @@ import { createInterface } from 'readline';
 interface ArmorPiece {
   name: string;
   weight: number;
+  available: string; // Add "available" property
   [stat: string]: number | string; // Allow any stat property
 }
 
@@ -38,18 +39,21 @@ function askQuestion(question: string): Promise<string> {
 }
 
 // Function to filter armor pieces
-function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number): ArmorPiece[] {
-    return pieces.filter(piece => typeof piece.weight === 'number' && piece.weight <= maxWeight);
+function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number, availabilityFilter: string): ArmorPiece[] {
+    return pieces.filter(piece => 
+        typeof piece.weight === 'number' && 
+        piece.weight <= maxWeight &&
+        (availabilityFilter === 'all' || piece.available === availabilityFilter)
+    );
 }
 
-// Corrected function to calculate stat scores
+// Function to calculate stat scores
 function calculateStatScores(combination: ArmorPiece[], stats: string[]): { [stat: string]: number } {
   const scores: { [stat: string]: number } = {};
 
   for (const stat of stats) {
     scores[stat] = 0;
     for (const piece of combination) {
-      // Access sub-stats for damage negation and resistance
       if (stat === 'negation') {
         scores[stat] += (piece['phy'] as number || 0) + (piece['vsStrike'] as number || 0) +
                        (piece['vsSlash'] as number || 0) + (piece['vsPierce'] as number || 0) +
@@ -73,7 +77,8 @@ function findArmorCombinations(
   currentEquipLoad: number,
   includedTypes: string[],
   rollType: RollType,
-  stats: string[]
+  stats: string[],
+  availabilityFilter: string
 ): { combination: ArmorPiece[]; statScores: { [stat: string]: number }; headroom: number }[] {
   const combinations: { combination: ArmorPiece[]; statScores: { [stat: string]: number }; headroom: number }[] = [];
 
@@ -134,7 +139,7 @@ function findArmorCombinations(
     }
 
     const maxAllowedArmorWeight = maxEquipLoad - currentEquipLoad;
-    availablePieces = filterArmorPieces(availablePieces, maxAllowedArmorWeight);
+    availablePieces = filterArmorPieces(availablePieces, maxAllowedArmorWeight, availabilityFilter);
     for (const piece of availablePieces) {
       generateCombinations(types, [...currentCombination, piece], currentIndex + 1);
     }
@@ -195,16 +200,20 @@ async function main() {
   const numCombinationsStr = await askQuestion("How many top combinations do you want to see? ");
   const numCombinations = parseInt(numCombinationsStr, 10);
 
+  const availabilityFilterStr = await askQuestion("Enter availability filter ('all', 'Base Game', or 'Shadow of the Erdtree DLC'): ");
+  const availabilityFilter = availabilityFilterStr.toLowerCase();
+
   const bestCombinations = findArmorCombinations(
     maxEquipLoad,
     currentEquipLoad,
     includedTypes,
     rollType,
-    stats
+    stats,
+    availabilityFilter
   );
 
   if (bestCombinations.length > 0) {
-    console.log(`\nTop ${numCombinations} Armor Combinations (Ranked by ${stats.join(", ")}):`);
+    console.log(`\nTop ${numCombinations} Armor Combinations (Ranked by ${stats.join(", ")}, availability: ${availabilityFilter}):`);
     for (let i = 0; i < Math.min(numCombinations, bestCombinations.length); i++) {
       const { combination, statScores, headroom } = bestCombinations[i];
       console.log(`\nCombination ${i + 1}:`);
