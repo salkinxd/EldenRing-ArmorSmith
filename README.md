@@ -8,13 +8,13 @@ This is an Elden Ring armor optimizer tool built with Node.js and TypeScript. It
 2. **Clone the repository:**
 
     ```bash
-    git clone <repository URL>
+    git clone https://github.com/salkinxd/EldenRing-ArmorSmith
     ```
 
 3. **Install dependencies:**
 
     ```bash
-    cd <repository name>
+    cd EldenRing-ArmorSmith
     npm install
     ```
 
