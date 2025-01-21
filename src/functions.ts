@@ -1,4 +1,4 @@
-import { ArmorPiece, RollType, ArmorData } from './types';
+import { ArmorPiece, RollType } from './types';
 import { armorData } from './armor-data'; // Import armorData
 
 // Function to filter armor pieces

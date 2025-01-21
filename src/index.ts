@@ -1,6 +1,4 @@
-import { RollType, ArmorPiece } from './types';
 import { findArmorCombinations } from './functions';
-import { armorData } from './armor-data';
 import { askQuestion, getNumberInput, getRollTypeInput, getStringArrayInput } from './input';
 import { displayCombinations } from './output';
 
