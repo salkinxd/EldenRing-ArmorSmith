@@ -42,14 +42,23 @@ function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number): ArmorPiece[
     return pieces.filter(piece => typeof piece.weight === 'number' && piece.weight <= maxWeight);
 }
 
-// Function to calculate stat scores
+// Corrected function to calculate stat scores
 function calculateStatScores(combination: ArmorPiece[], stats: string[]): { [stat: string]: number } {
   const scores: { [stat: string]: number } = {};
 
   for (const stat of stats) {
     scores[stat] = 0;
     for (const piece of combination) {
-      if (typeof piece[stat] === 'number') {
+      // Access sub-stats for damage negation and resistance
+      if (stat === 'negation') {
+        scores[stat] += (piece['phy'] as number || 0) + (piece['vsStrike'] as number || 0) +
+                       (piece['vsSlash'] as number || 0) + (piece['vsPierce'] as number || 0) +
+                       (piece['magic'] as number || 0) + (piece['fire'] as number || 0) +
+                       (piece['ligt'] as number || 0) + (piece['holy'] as number || 0);
+      } else if (stat === 'resistance') {
+        scores[stat] += (piece['immunity'] as number || 0) + (piece['robustness'] as number || 0) +
+                       (piece['focus'] as number || 0) + (piece['vitality'] as number || 0);
+      } else if (typeof piece[stat] === 'number') {
         scores[stat] += piece[stat] as number;
       }
     }
@@ -136,11 +145,11 @@ function findArmorCombinations(
   // Sort combinations by the specified stats
   combinations.sort((a, b) => {
     for (const stat of stats) {
-        const scoreA = a.statScores[stat] || 0;
-        const scoreB = b.statScores[stat] || 0;
-        if (scoreA !== scoreB) {
-            return scoreB - scoreA; // Sort descending
-        }
+      const scoreA = a.statScores[stat] || 0;
+      const scoreB = b.statScores[stat] || 0;
+      if (scoreA !== scoreB) {
+        return scoreB - scoreA; // Sort descending
+      }
     }
     return b.headroom - a.headroom;
   });
