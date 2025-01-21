@@ -39,12 +39,13 @@ function askQuestion(question: string): Promise<string> {
 
 // Function to filter armor pieces
 function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number): ArmorPiece[] {
-    return pieces.filter(piece => piece.weight <= maxWeight);
+  return pieces.filter(piece => piece.weight <= maxWeight);
 }
 
 // Function to find armor combinations
 function findArmorCombinations(
-  availableLoad: number,
+  maxEquipLoad: number, // Now uses maxEquipLoad for weight checks
+  currentEquipLoad: number,
   includedTypes: string[],
   rollType: RollType
 ): ArmorPiece[][] {
@@ -57,20 +58,21 @@ function findArmorCombinations(
     currentIndex: number
   ) => {
     if (currentIndex === types.length) {
-      const totalWeight = currentCombination.reduce((sum, piece) => sum + piece.weight, 0);
+      const armorWeight = currentCombination.reduce((sum, piece) => sum + piece.weight, 0);
+      const totalWeight = armorWeight + currentEquipLoad; // Add current equip load for total weight
       const totalPoise = currentCombination.reduce((sum, piece) => sum + piece.poise, 0);
 
-      // Check weight based on roll type
+      // Check weight based on roll type (using maxEquipLoad)
       let isWeightValid = false;
       switch (rollType) {
         case RollType.Light:
-          isWeightValid = totalWeight <= availableLoad * 0.299;
+          isWeightValid = totalWeight <= maxEquipLoad * 0.299;
           break;
         case RollType.Medium:
-          isWeightValid = totalWeight <= availableLoad * 0.699;
+          isWeightValid = totalWeight <= maxEquipLoad * 0.699;
           break;
         case RollType.Heavy:
-          isWeightValid = totalWeight <= availableLoad * 0.999;
+          isWeightValid = totalWeight <= maxEquipLoad * 0.999;
           break;
       }
 
@@ -84,21 +86,22 @@ function findArmorCombinations(
     let availablePieces: ArmorPiece[] = [];
 
     switch (currentType) {
-        case 'helm':
-          availablePieces = armorData.helms;
-          break;
-        case 'chest':
-          availablePieces = armorData.chests;
-          break;
-        case 'gauntlets':
-          availablePieces = armorData.gauntlets;
-          break;
-        case 'legs':
-          availablePieces = armorData.legs;
-          break;
+      case 'helm':
+        availablePieces = armorData.helms;
+        break;
+      case 'chest':
+        availablePieces = armorData.chests;
+        break;
+      case 'gauntlets':
+        availablePieces = armorData.gauntlets;
+        break;
+      case 'legs':
+        availablePieces = armorData.legs;
+        break;
     }
 
-    availablePieces = filterArmorPieces(availablePieces, availableLoad);
+    const maxAllowedArmorWeight = maxEquipLoad - currentEquipLoad;
+    availablePieces = filterArmorPieces(availablePieces, maxAllowedArmorWeight);
     for (const piece of availablePieces) {
       generateCombinations(types, [...currentCombination, piece], currentIndex + 1);
     }
@@ -130,8 +133,6 @@ async function main() {
   const currentEquipLoadStr = await askQuestion("Enter your current equip load (excluding armor): ");
   const currentEquipLoad = parseFloat(currentEquipLoadStr);
 
-  const availableLoad = maxEquipLoad - currentEquipLoad;
-
   const includedTypesStr = await askQuestion(
     "Enter the armor types to include (e.g., 'helm chest gauntlets legs'), separated by spaces: "
   );
@@ -155,15 +156,16 @@ async function main() {
   }
 
   const bestCombinations = findArmorCombinations(
-    availableLoad,
+    maxEquipLoad, // Pass maxEquipLoad
+    currentEquipLoad,
     includedTypes,
     rollType
   );
 
   if (bestCombinations.length > 0) {
     console.log("\nArmor Combinations with Highest Poise:");
-    bestCombinations.forEach((combination, index) => {
-      console.log(`\nCombination ${index + 1}:`);
+    for (const combination of bestCombinations) {
+      console.log(`\nCombination:`);
       combination.forEach((piece) => {
         console.log(
           `${piece.name} - Weight: ${piece.weight}, Poise: ${piece.poise}`
@@ -195,7 +197,7 @@ async function main() {
       console.log(`Total Weight (with current equip load): ${totalWeight}`);
       console.log(`Total Poise: ${totalPoise}`);
       console.log(`Headroom for ${rollTypeStr} roll: ${headroom.toFixed(2)} (Max allowed: ${maxAllowedWeight.toFixed(2)})`);
-    });
+    };
   } else {
     console.log("No suitable armor combinations found.");
   }
