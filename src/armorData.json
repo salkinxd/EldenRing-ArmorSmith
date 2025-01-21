@@ -1,0 +1,3260 @@
+{
+    "gauntlets": [
+        {
+            "name": "Ascetic's Wrist Guards",
+            "weight": 1.1,
+            "poise": 2
+        },
+        {
+            "name": "Gravebird Bracelets",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Divine Bird Warrior Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "All-Knowing Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Astrologer Gloves",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Bloodsoaked Manchettes",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Blue Silver Bracelets",
+            "weight": 2.1,
+            "poise": 3
+        },
+        {
+            "name": "Champion Bracers",
+            "weight": 2.1,
+            "poise": 3
+        },
+        {
+            "name": "Fingerprint Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Godrick Soldier Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Godskin Apostle Bracelets",
+            "weight": 2.1,
+            "poise": 3
+        },
+        {
+            "name": "Knight Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Leyndell Soldier Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Mausoleum Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Perfumer Gloves",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Preceptor's Gloves",
+            "weight": 2.1,
+            "poise": 3
+        },
+        {
+            "name": "Radahn Soldier Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Raya Lucarian Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Traveler's Gloves",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Vagabond Knight Gauntlets",
+            "weight": 3.5,
+            "poise": 5
+        },
+        {
+            "name": "Vulgar Militia Gauntlets",
+            "weight": 2.1,
+            "poise": 3
+        },
+        {
+            "name": "White Reed Gauntlets",
+            "weight": 2.8,
+            "poise": 4
+        },
+        {
+            "name": "Common Soldier Gauntlets",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Eccentric's Manchettes",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Exile Gauntlets",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Gauntlets",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Iron Gauntlets",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Kaiden Gauntlets",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Ragged Gloves",
+            "weight": 2.9,
+            "poise": 4
+        },
+        {
+            "name": "Crucible Gauntlets",
+            "weight": 5.2,
+            "poise": 7
+        },
+        {
+            "name": "Malformed Dragon Gauntlets",
+            "weight": 5.3,
+            "poise": 7
+        },
+        {
+            "name": "Black Knight Gauntlets",
+            "weight": 4.6,
+            "poise": 6
+        },
+        {
+            "name": "Blaidd's Gauntlets",
+            "weight": 4.6,
+            "poise": 6
+        },
+        {
+            "name": "Fire Knight Gauntlets",
+            "weight": 3.1,
+            "poise": 4
+        },
+        {
+            "name": "Black Knife Gauntlets",
+            "weight": 3.1,
+            "poise": 4
+        },
+        {
+            "name": "Drake Knight Gauntlets",
+            "weight": 3.1,
+            "poise": 4
+        },
+        {
+            "name": "Elden Lord Bracers",
+            "weight": 3.1,
+            "poise": 4
+        },
+        {
+            "name": "Malenia's Gauntlet",
+            "weight": 3.1,
+            "poise": 4
+        },
+        {
+            "name": "Rellana's Gloves",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Blackflame Monk Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Briar Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Cuckoo Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Fire Monk Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Gelmir Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Godrick Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Haligtree Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Hoslow's Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Leyndell Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Mausoleum Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Redmane Knight Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Twinned Gauntlets",
+            "weight": 3.9,
+            "poise": 5
+        },
+        {
+            "name": "Tree Sentinel Gauntlets",
+            "weight": 6.3,
+            "poise": 8
+        },
+        {
+            "name": "Veteran's Gauntlets",
+            "weight": 6.3,
+            "poise": 8
+        },
+        {
+            "name": "Shadow Militiaman Gauntlets",
+            "weight": 2.4,
+            "poise": 3
+        },
+        {
+            "name": "Brave's Bracer",
+            "weight": 0.8,
+            "poise": 1
+        },
+        {
+            "name": "Gold Bracelets",
+            "weight": 0.8,
+            "poise": 1
+        },
+        {
+            "name": "Leather Gloves",
+            "weight": 2.4,
+            "poise": 3
+        },
+        {
+            "name": "Omenkiller Long Gloves",
+            "weight": 2.4,
+            "poise": 3
+        },
+        {
+            "name": "Traveling Maiden Gloves",
+            "weight": 1.6,
+            "poise": 2
+        },
+        {
+            "name": "Fire Prelate Gauntlets",
+            "weight": 8.2,
+            "poise": 10
+        },
+        {
+            "name": "Banished Knight Gauntlets",
+            "weight": 5.8,
+            "poise": 7
+        },
+        {
+            "name": "Beast Champion Gauntlets",
+            "weight": 5.8,
+            "poise": 7
+        },
+        {
+            "name": "Radahn's Gauntlets",
+            "weight": 5.8,
+            "poise": 7
+        },
+        {
+            "name": "Dryleaf Arm Wraps",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Bandit Manchettes",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Queen's Bracelets",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Raging Wolf Gauntlets",
+            "weight": 3.4,
+            "poise": 4
+        },
+        {
+            "name": "Traveler's Manchettes",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Verdigris Gauntlets",
+            "weight": 8.6,
+            "poise": 10
+        },
+        {
+            "name": "Maliketh's Gauntlets",
+            "weight": 4.3,
+            "poise": 5
+        },
+        {
+            "name": "Night's Cavalry Gauntlets",
+            "weight": 4.3,
+            "poise": 5
+        },
+        {
+            "name": "Foot Soldier Gauntlets",
+            "weight": 2.6,
+            "poise": 3
+        },
+        {
+            "name": "Highwayman Gauntlets",
+            "weight": 2.6,
+            "poise": 3
+        },
+        {
+            "name": "Nox Bracelets",
+            "weight": 2.6,
+            "poise": 3
+        },
+        {
+            "name": "Royal Knight Gauntlets",
+            "weight": 5.2,
+            "poise": 6
+        },
+        {
+            "name": "Oathseeker Knight Gauntlets",
+            "weight": 3.5,
+            "poise": 4
+        },
+        {
+            "name": "Bloodhound Knight Gauntlets",
+            "weight": 3.5,
+            "poise": 4
+        },
+        {
+            "name": "Carian Knight Gauntlets",
+            "weight": 3.5,
+            "poise": 4
+        },
+        {
+            "name": "Haligtree Gauntlets",
+            "weight": 3.5,
+            "poise": 4
+        },
+        {
+            "name": "Royal Remains Gauntlets",
+            "weight": 3.5,
+            "poise": 4
+        },
+        {
+            "name": "Messmer's Gauntlets",
+            "weight": 2.8,
+            "poise": 3
+        },
+        {
+            "name": "Confessor Gloves",
+            "weight": 2.8,
+            "poise": 3
+        },
+        {
+            "name": "Land of Reeds Gauntlets",
+            "weight": 2.8,
+            "poise": 3
+        },
+        {
+            "name": "Guardian Bracers",
+            "weight": 2.9,
+            "poise": 3
+        },
+        {
+            "name": "Depraved Perfumer Gloves",
+            "weight": 2,
+            "poise": 2
+        },
+        {
+            "name": "Noble's Gloves",
+            "weight": 2.1,
+            "poise": 2
+        },
+        {
+            "name": "Azur's Manchettes",
+            "weight": 1.1,
+            "poise": 1
+        },
+        {
+            "name": "Errant Sorcerer Manchettes",
+            "weight": 1.1,
+            "poise": 1
+        },
+        {
+            "name": "Lusat's Manchettes",
+            "weight": 1.1,
+            "poise": 1
+        },
+        {
+            "name": "Millicent's Gloves",
+            "weight": 1.1,
+            "poise": 1
+        },
+        {
+            "name": "Sorcerer Manchettes",
+            "weight": 1.1,
+            "poise": 1
+        },
+        {
+            "name": "Dancer's Bracer",
+            "weight": 1.4,
+            "poise": 1
+        },
+        {
+            "name": "Alberich's Bracers",
+            "weight": 1.4,
+            "poise": 1
+        },
+        {
+            "name": "Golden Prosthetic",
+            "weight": 2.8,
+            "poise": 2
+        }
+    ],
+    "legs": [
+        {
+            "name": "Dryleaf Cuissardes",
+            "weight": 3.1,
+            "poise": 6
+        },
+        {
+            "name": "Gaius's Greaves",
+            "weight": 8.9,
+            "poise": 17
+        },
+        {
+            "name": "Oathseeker Knight Greaves",
+            "weight": 6.6,
+            "poise": 12
+        },
+        {
+            "name": "Verdigris Greaves",
+            "weight": 16,
+            "poise": 28
+        },
+        {
+            "name": "Iron Rivet Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Thiollier's Trousers",
+            "weight": 4.4,
+            "poise": 8
+        },
+        {
+            "name": "High Priest Undergarments",
+            "weight": 2.5,
+            "poise": 6
+        },
+        {
+            "name": "Soiled Loincloth",
+            "weight": 1.5,
+            "poise": 2
+        },
+        {
+            "name": "Dancer's Trousers",
+            "weight": 2,
+            "poise": 3
+        },
+        {
+            "name": "Greaves of Night",
+            "weight": 4.4,
+            "poise": 7
+        },
+        {
+            "name": "Igon's Loincloth",
+            "weight": 3.9,
+            "poise": 8
+        },
+        {
+            "name": "Ansbach's Boots",
+            "weight": 3.1,
+            "poise": 7
+        },
+        {
+            "name": "Freyja's Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Greaves of Solitude",
+            "weight": 14.8,
+            "poise": 27
+        },
+        {
+            "name": "Messmer Soldier Greaves",
+            "weight": 5.5,
+            "poise": 11
+        },
+        {
+            "name": "Black Knight Greaves",
+            "weight": 8.5,
+            "poise": 17
+        },
+        {
+            "name": "Rakshasa Greaves",
+            "weight": 7.9,
+            "poise": 16
+        },
+        {
+            "name": "Fire Knight Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Leather Leg Wraps",
+            "weight": 4.4,
+            "poise": 8
+        },
+        {
+            "name": "Death Knight Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Ascetic's Ankle Guards",
+            "weight": 2,
+            "poise": 6
+        },
+        {
+            "name": "Messmer's Greaves",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Gravebird Anklets",
+            "weight": 2,
+            "poise": 5
+        },
+        {
+            "name": "Common Soldier Greaves",
+            "weight": 5.5,
+            "poise": 11
+        },
+        {
+            "name": "Horned Warrior Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Divine Bird Warrior Greaves",
+            "weight": 7.3,
+            "poise": 15
+        },
+        {
+            "name": "Rellana's Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Young Lion's Greaves",
+            "weight": 9.3,
+            "poise": 19
+        },
+        {
+            "name": "Shadow Militiaman Greaves",
+            "weight": 4.4,
+            "poise": 8
+        },
+        {
+            "name": "All-Knowing Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Alberich's Trousers",
+            "weight": 2.5,
+            "poise": 5
+        },
+        {
+            "name": "Astrologer Trousers",
+            "weight": 3.9,
+            "poise": 7
+        },
+        {
+            "name": "Bandit Boots",
+            "weight": 4.4,
+            "poise": 8
+        },
+        {
+            "name": "Banished Knight Greaves",
+            "weight": 10.8,
+            "poise": 20
+        },
+        {
+            "name": "Beast Champion Greaves",
+            "weight": 10.8,
+            "poise": 20
+        },
+        {
+            "name": "Black Knife Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Blackflame Monk Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Bloodhound Knight Greaves",
+            "weight": 6.6,
+            "poise": 11
+        },
+        {
+            "name": "Briar Greaves",
+            "weight": 7.3,
+            "poise": 12
+        },
+        {
+            "name": "Bull-Goat Greaves",
+            "weight": 16.4,
+            "poise": 28
+        },
+        {
+            "name": "Champion Gaiters",
+            "weight": 3.9,
+            "poise": 4
+        },
+        {
+            "name": "Carian Knight Greaves",
+            "weight": 6.6,
+            "poise": 11
+        },
+        {
+            "name": "Chain Leggings",
+            "weight": 5.5,
+            "poise": 10
+        },
+        {
+            "name": "Cleanrot Greaves",
+            "weight": 9.3,
+            "poise": 16
+        },
+        {
+            "name": "Cloth Trousers",
+            "weight": 2,
+            "poise": 3
+        },
+        {
+            "name": "Commoner's Shoes",
+            "weight": 2,
+            "poise": 3
+        },
+        {
+            "name": "Confessor Boots",
+            "weight": 4.8,
+            "poise": 9
+        },
+        {
+            "name": "Consort's Trousers",
+            "weight": 2.5,
+            "poise": 4
+        },
+        {
+            "name": "Crucible Greaves",
+            "weight": 9.6,
+            "poise": 20
+        },
+        {
+            "name": "Eccentric's Breeches",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Elden Lord Greaves",
+            "weight": 5.5,
+            "poise": 10
+        },
+        {
+            "name": "Errant Sorcerer Boots",
+            "weight": 3.1,
+            "poise": 5
+        },
+        {
+            "name": "Exile Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Finger Maiden Shoes",
+            "weight": 2.5,
+            "poise": 4
+        },
+        {
+            "name": "Fire Monk Greaves",
+            "weight": 7.3,
+            "poise": 13
+        },
+        {
+            "name": "Foot Soldier Greaves",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Fur Leggings",
+            "weight": 3.1,
+            "poise": 5
+        },
+        {
+            "name": "Gelmir Knight Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Godrick Knight Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Godskin Apostle Trousers",
+            "weight": 2.5,
+            "poise": 5
+        },
+        {
+            "name": "Guardian Greaves",
+            "weight": 5.5,
+            "poise": 9
+        },
+        {
+            "name": "Haligtree Greaves",
+            "weight": 6.6,
+            "poise": 12
+        },
+        {
+            "name": "Hoslow's Greaves",
+            "weight": 7.3,
+            "poise": 13
+        },
+        {
+            "name": "Kaiden Trousers",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Knight Greaves",
+            "weight": 6.6,
+            "poise": 14
+        },
+        {
+            "name": "Land of Reeds Greaves",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Leather Trousers",
+            "weight": 5.5,
+            "poise": 11
+        },
+        {
+            "name": "Lionel's Greaves",
+            "weight": 13.1,
+            "poise": 24
+        },
+        {
+            "name": "Malformed Dragon Greaves",
+            "weight": 9.9,
+            "poise": 19
+        },
+        {
+            "name": "Maliketh's Greaves",
+            "weight": 7.9,
+            "poise": 14
+        },
+        {
+            "name": "Millicent's Boots",
+            "weight": 2,
+            "poise": 4
+        },
+        {
+            "name": "Mushroom Legs",
+            "weight": 3.1,
+            "poise": 3
+        },
+        {
+            "name": "Noble's Trousers",
+            "weight": 3.9,
+            "poise": 6
+        },
+        {
+            "name": "Omenkiller Boots",
+            "weight": 4.4,
+            "poise": 9
+        },
+        {
+            "name": "Queen's Leggings",
+            "weight": 2,
+            "poise": 3
+        },
+        {
+            "name": "Page Trousers",
+            "weight": 2.5,
+            "poise": 5
+        },
+        {
+            "name": "Preceptor's Trousers",
+            "weight": 3.9,
+            "poise": 7
+        },
+        {
+            "name": "Prisoner Trousers",
+            "weight": 2,
+            "poise": 4
+        },
+        {
+            "name": "Prophet Trousers",
+            "weight": 3.1,
+            "poise": 3
+        },
+        {
+            "name": "Radahn's Greaves",
+            "weight": 10.8,
+            "poise": 20
+        },
+        {
+            "name": "Radahn Soldier Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Raging Wolf Greaves",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Raya Lucarian Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Rotten Duelist Greaves",
+            "weight": 7.3,
+            "poise": 13
+        },
+        {
+            "name": "Sage Trousers",
+            "weight": 2.5,
+            "poise": 4
+        },
+        {
+            "name": "Sanguine Noble Waistcloth",
+            "weight": 2.5,
+            "poise": 5
+        },
+        {
+            "name": "Scaled Greaves",
+            "weight": 9.9,
+            "poise": 20
+        },
+        {
+            "name": "Snow Witch Skirt",
+            "weight": 3.1,
+            "poise": 5
+        },
+        {
+            "name": "Sorcerer Leggings",
+            "weight": 2,
+            "poise": 3
+        },
+        {
+            "name": "Traveler's Slops",
+            "weight": 2.5,
+            "poise": 5
+        },
+        {
+            "name": "Traveling Maiden Boots",
+            "weight": 2.9,
+            "poise": 6
+        },
+        {
+            "name": "Twinned Greaves",
+            "weight": 7.3,
+            "poise": 13
+        },
+        {
+            "name": "Warrior Greaves",
+            "weight": 4.8,
+            "poise": 10
+        },
+        {
+            "name": "Vagabond Knight Greaves",
+            "weight": 5.7,
+            "poise": 12
+        },
+        {
+            "name": "Veteran's Greaves",
+            "weight": 11.7,
+            "poise": 22
+        },
+        {
+            "name": "White Reed Greaves",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Zamor Legwraps",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Drake Knight Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Perfumer Sarong",
+            "weight": 2.5,
+            "poise": 4
+        },
+        {
+            "name": "Spellblade's Trousers",
+            "weight": 2.6,
+            "poise": 5
+        },
+        {
+            "name": "Ronin's Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Blaidd's Greaves",
+            "weight": 8.5,
+            "poise": 17
+        },
+        {
+            "name": "Night's Cavalry Greaves",
+            "weight": 7.9,
+            "poise": 15
+        },
+        {
+            "name": "Blue Silver Mail Skirt",
+            "weight": 5.5,
+            "poise": 10
+        },
+        {
+            "name": "Nomadic Merchant's Trousers",
+            "weight": 4.4,
+            "poise": 8
+        },
+        {
+            "name": "Tree Sentinel Greaves",
+            "weight": 11.7,
+            "poise": 23
+        },
+        {
+            "name": "Royal Knight Greaves",
+            "weight": 9.6,
+            "poise": 14
+        },
+        {
+            "name": "Nox Greaves",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Shaman Leggings",
+            "weight": 3.1,
+            "poise": 4
+        },
+        {
+            "name": "Duelist Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Fire Prelate Greaves",
+            "weight": 15.3,
+            "poise": 27
+        },
+        {
+            "name": "Aristocrat Boots",
+            "weight": 2.9,
+            "poise": 7
+        },
+        {
+            "name": "Old Aristocrat Shoes",
+            "weight": 2,
+            "poise": 2
+        },
+        {
+            "name": "Vulgar Militia Greaves",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Godskin Noble Trousers",
+            "weight": 2.5,
+            "poise": 6
+        },
+        {
+            "name": "Depraved Perfumer Trousers",
+            "weight": 4.3,
+            "poise": 7
+        },
+        {
+            "name": "Old Sorcerer's Legwraps",
+            "weight": 2.5,
+            "poise": 4
+        },
+        {
+            "name": "Ragged Loincloth",
+            "weight": 3.1,
+            "poise": 3
+        },
+        {
+            "name": "War Surgeon Trousers",
+            "weight": 4.2,
+            "poise": 8
+        },
+        {
+            "name": "Royal Remains Greaves",
+            "weight": 6.6,
+            "poise": 12
+        },
+        {
+            "name": "Brave's Legwraps",
+            "weight": 3.1,
+            "poise": 6
+        },
+        {
+            "name": "Malenia's Greaves",
+            "weight": 5.7,
+            "poise": 11
+        },
+        {
+            "name": "Fingerprint Greaves",
+            "weight": 6.6,
+            "poise": 14
+        },
+        {
+            "name": "Omen Greaves",
+            "weight": 14.3,
+            "poise": 25
+        },
+        {
+            "name": "Battlemage Legwraps",
+            "weight": 2.5,
+            "poise": 6
+        },
+        {
+            "name": "Traveler's Boots",
+            "weight": 3.1,
+            "poise": 6
+        },
+        {
+            "name": "Gold Waistwrap",
+            "weight": 4.4,
+            "poise": 7
+        },
+        {
+            "name": "Leather Boots",
+            "weight": 4.4,
+            "poise": 7
+        },
+        {
+            "name": "Godrick Soldier Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Leyndell Soldier Greaves",
+            "weight": 6.6,
+            "poise": 13
+        },
+        {
+            "name": "Mausoleum Greaves",
+            "weight": 6.6,
+            "poise": 14
+        },
+        {
+            "name": "Cuckoo Knight Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Leyndell Knight Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Redmane Knight Greaves",
+            "weight": 7.3,
+            "poise": 14
+        },
+        {
+            "name": "Mausoleum Knight Greaves",
+            "weight": 7.3,
+            "poise": 15
+        },
+        {
+            "name": "Haligtree Knight Greaves",
+            "weight": 7.3,
+            "poise": 13
+        },
+        {
+            "name": "Deathbed Smalls",
+            "weight": 2,
+            "poise": 3
+        }
+    ],
+    "chests": [
+        {
+            "name": "Ascetic's Loincloth",
+            "weight": 3.2,
+            "poise": 10
+        },
+        {
+            "name": "Ansbach's Attire (Altered)",
+            "weight": 4.1,
+            "poise": 10
+        },
+        {
+            "name": "Aristocrat Garb (Altered)",
+            "weight": 4.1,
+            "poise": 10
+        },
+        {
+            "name": "Battlemage Robe",
+            "weight": 4.1,
+            "poise": 10
+        },
+        {
+            "name": "Ansbach's Attire",
+            "weight": 5.1,
+            "poise": 12
+        },
+        {
+            "name": "Mausoleum Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 25
+        },
+        {
+            "name": "Eye Surcoat",
+            "weight": 9.2,
+            "poise": 21
+        },
+        {
+            "name": "Tree Surcoat",
+            "weight": 9.2,
+            "poise": 21
+        },
+        {
+            "name": "Knight Armor",
+            "weight": 10.6,
+            "poise": 24
+        },
+        {
+            "name": "Fingerprint Armor",
+            "weight": 10.6,
+            "poise": 24
+        },
+        {
+            "name": "Mausoleum Surcoat",
+            "weight": 10.6,
+            "poise": 24
+        },
+        {
+            "name": "All-Knowing Armor (Altered)",
+            "weight": 9.3,
+            "poise": 21
+        },
+        {
+            "name": "Messmer Soldier Armor (Altered)",
+            "weight": 8.1,
+            "poise": 18
+        },
+        {
+            "name": "Cuckoo Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 24
+        },
+        {
+            "name": "Gelmir Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 24
+        },
+        {
+            "name": "Godrick Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 24
+        },
+        {
+            "name": "Leyndell Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 24
+        },
+        {
+            "name": "Redmane Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 24
+        },
+        {
+            "name": "Lord of Blood's Robe (Altered)",
+            "weight": 7.3,
+            "poise": 16
+        },
+        {
+            "name": "Millicent's Robe",
+            "weight": 3.2,
+            "poise": 7
+        },
+        {
+            "name": "Brave's Battlewear (Altered)",
+            "weight": 3.2,
+            "poise": 7
+        },
+        {
+            "name": "Errant Sorcerer Robe (Altered)",
+            "weight": 3.2,
+            "poise": 7
+        },
+        {
+            "name": "Festive Garb (Altered)",
+            "weight": 3.2,
+            "poise": 7
+        },
+        {
+            "name": "Preceptor's Long Gown (Altered)",
+            "weight": 3.2,
+            "poise": 7
+        },
+        {
+            "name": "Vagabond Knight Armor (Altered)",
+            "weight": 9.6,
+            "poise": 21
+        },
+        {
+            "name": "Finger Maiden Robe",
+            "weight": 4.6,
+            "poise": 10
+        },
+        {
+            "name": "Gravebird's Blackquill Armor",
+            "weight": 7.4,
+            "poise": 16
+        },
+        {
+            "name": "Finger Maiden Robe (Altered)",
+            "weight": 3.7,
+            "poise": 8
+        },
+        {
+            "name": "Divine Bird Warrior Armor",
+            "weight": 11.6,
+            "poise": 25
+        },
+        {
+            "name": "Nox Swordstress Armor (Altered)",
+            "weight": 7.5,
+            "poise": 16
+        },
+        {
+            "name": "Crucible Axe Armor",
+            "weight": 15.5,
+            "poise": 33
+        },
+        {
+            "name": "Igon's Armor",
+            "weight": 8,
+            "poise": 17
+        },
+        {
+            "name": "Spellblade's Traveling Attire",
+            "weight": 3.3,
+            "poise": 7
+        },
+        {
+            "name": "Divine Beast Warrior Armor",
+            "weight": 10.4,
+            "poise": 22
+        },
+        {
+            "name": "Black Knife Armor (Altered)",
+            "weight": 9,
+            "poise": 19
+        },
+        {
+            "name": "Rakshasa Armor",
+            "weight": 12.8,
+            "poise": 27
+        },
+        {
+            "name": "Lord of Blood's Robe",
+            "weight": 8.1,
+            "poise": 17
+        },
+        {
+            "name": "Goldmask's Rags",
+            "weight": 2.4,
+            "poise": 5
+        },
+        {
+            "name": "Crucible Axe Armor (Altered)",
+            "weight": 14.9,
+            "poise": 31
+        },
+        {
+            "name": "Crucible Tree Armor (Altered)",
+            "weight": 14.9,
+            "poise": 31
+        },
+        {
+            "name": "Igon's Armor (Altered)",
+            "weight": 7.7,
+            "poise": 16
+        },
+        {
+            "name": "Blue Cloth Vest",
+            "weight": 7.7,
+            "poise": 16
+        },
+        {
+            "name": "Highwayman Cloth Armor",
+            "weight": 7.7,
+            "poise": 16
+        },
+        {
+            "name": "Malenia's Armor",
+            "weight": 7.7,
+            "poise": 16
+        },
+        {
+            "name": "Vulgar Militia Armor",
+            "weight": 7.7,
+            "poise": 16
+        },
+        {
+            "name": "Cuckoo Surcoat",
+            "weight": 10.6,
+            "poise": 22
+        },
+        {
+            "name": "Erdtree Surcoat",
+            "weight": 10.6,
+            "poise": 22
+        },
+        {
+            "name": "Tree-and-Beast Surcoat",
+            "weight": 10.6,
+            "poise": 22
+        },
+        {
+            "name": "Vagabond Knight Armor",
+            "weight": 10.6,
+            "poise": 22
+        },
+        {
+            "name": "Redmane Surcoat",
+            "weight": 10.6,
+            "poise": 22
+        },
+        {
+            "name": "Oathseeker Knight Armor",
+            "weight": 9.2,
+            "poise": 19
+        },
+        {
+            "name": "Black Knife Armor",
+            "weight": 9.2,
+            "poise": 19
+        },
+        {
+            "name": "Blue Silver Mail Armor",
+            "weight": 9.2,
+            "poise": 19
+        },
+        {
+            "name": "Elden Lord Armor",
+            "weight": 9.2,
+            "poise": 19
+        },
+        {
+            "name": "Exile Armor",
+            "weight": 9.2,
+            "poise": 19
+        },
+        {
+            "name": "Highland Attire",
+            "weight": 6.3,
+            "poise": 13
+        },
+        {
+            "name": "Tree Sentinel Armor",
+            "weight": 18.9,
+            "poise": 39
+        },
+        {
+            "name": "Scaled Armor",
+            "weight": 16,
+            "poise": 33
+        },
+        {
+            "name": "All-Knowing Armor",
+            "weight": 10.7,
+            "poise": 22
+        },
+        {
+            "name": "Messmer's Armor",
+            "weight": 7.8,
+            "poise": 16
+        },
+        {
+            "name": "Chain-Draped Tabard",
+            "weight": 8.3,
+            "poise": 17
+        },
+        {
+            "name": "Leather-Draped Tabard",
+            "weight": 8.3,
+            "poise": 17
+        },
+        {
+            "name": "White Reed Armor",
+            "weight": 8.3,
+            "poise": 17
+        },
+        {
+            "name": "Foot Soldier Tabard",
+            "weight": 8.3,
+            "poise": 17
+        },
+        {
+            "name": "Nox Swordstress Armor",
+            "weight": 8.3,
+            "poise": 17
+        },
+        {
+            "name": "Scarlet Tabard",
+            "weight": 8.3,
+            "poise": 17
+        },
+        {
+            "name": "Kaiden Armor",
+            "weight": 8.8,
+            "poise": 18
+        },
+        {
+            "name": "Scale Armor",
+            "weight": 8.8,
+            "poise": 18
+        },
+        {
+            "name": "Zamor Armor",
+            "weight": 8.8,
+            "poise": 18
+        },
+        {
+            "name": "Marionette Soldier Armor",
+            "weight": 8.8,
+            "poise": 18
+        },
+        {
+            "name": "Young Lion's Armor (Altered)",
+            "weight": 13.7,
+            "poise": 28
+        },
+        {
+            "name": "Fire Knight Armor",
+            "weight": 9.3,
+            "poise": 19
+        },
+        {
+            "name": "Traveling Maiden Robe",
+            "weight": 4.9,
+            "poise": 10
+        },
+        {
+            "name": "Haligtree Knight Armor (Altered)",
+            "weight": 10.8,
+            "poise": 22
+        },
+        {
+            "name": "Rellana's Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Blackflame Monk Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Gelmir Knight Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Godrick Knight Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Cuckoo Knight Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Leyndell Knight Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Night's Cavalry Armor (Altered)",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Redmane Knight Armor",
+            "weight": 11.8,
+            "poise": 24
+        },
+        {
+            "name": "Fire Knight Armor (Altered)",
+            "weight": 8.4,
+            "poise": 17
+        },
+        {
+            "name": "Elden Lord Armor (Altered)",
+            "weight": 8.4,
+            "poise": 17
+        },
+        {
+            "name": "Radahn's Lion Armor (Altered)",
+            "weight": 16.4,
+            "poise": 33
+        },
+        {
+            "name": "Veteran's Armor",
+            "weight": 18.9,
+            "poise": 38
+        },
+        {
+            "name": "Banished Knight Armor (Altered)",
+            "weight": 16.5,
+            "poise": 33
+        },
+        {
+            "name": "Blue Silver Mail Armor (Altered)",
+            "weight": 8.5,
+            "poise": 17
+        },
+        {
+            "name": "Scaled Armor (Altered)",
+            "weight": 15,
+            "poise": 30
+        },
+        {
+            "name": "Leda's Armor",
+            "weight": 10.6,
+            "poise": 21
+        },
+        {
+            "name": "Eccentric's Armor",
+            "weight": 10.6,
+            "poise": 21
+        },
+        {
+            "name": "Haligtree Crest Surcoat",
+            "weight": 10.6,
+            "poise": 21
+        },
+        {
+            "name": "Royal Remains Armor",
+            "weight": 10.6,
+            "poise": 21
+        },
+        {
+            "name": "Bloodhound Knight Armor (Altered)",
+            "weight": 9.6,
+            "poise": 19
+        },
+        {
+            "name": "Nox Monk Armor",
+            "weight": 8.1,
+            "poise": 16
+        },
+        {
+            "name": "Ronin's Armor (Altered)",
+            "weight": 7.6,
+            "poise": 15
+        },
+        {
+            "name": "Nomadic Merchant's Finery (Altered)",
+            "weight": 6.1,
+            "poise": 12
+        },
+        {
+            "name": "Dryleaf Robe",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Champion Pauldron",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Old Aristocrat Gown",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Perfumer's Traveling Garb",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Ruler's Robe",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Sanguine Noble Robe",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Page Garb",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Perfumer Robe",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Prophet Robe (Altered)",
+            "weight": 5.1,
+            "poise": 10
+        },
+        {
+            "name": "Messmer Soldier Armor",
+            "weight": 9.2,
+            "poise": 18
+        },
+        {
+            "name": "Dryleaf Robe (Altered)",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Errant Sorcerer Robe",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Godskin Apostle Robe",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Marais Robe",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Brave's Battlewear",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Lazuli Robe",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Official's Attire",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Perfumer Robe (Altered)",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Perfumer's Traveling Garb (Altered)",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Traveler's Clothes",
+            "weight": 4.1,
+            "poise": 8
+        },
+        {
+            "name": "Bandit Garb",
+            "weight": 7.7,
+            "poise": 15
+        },
+        {
+            "name": "Guardian Garb",
+            "weight": 7.7,
+            "poise": 15
+        },
+        {
+            "name": "Raptor's Black Feathers",
+            "weight": 7.7,
+            "poise": 15
+        },
+        {
+            "name": "Hoslow's Armor (Altered)",
+            "weight": 10.8,
+            "poise": 21
+        },
+        {
+            "name": "Banished Knight Armor",
+            "weight": 17.5,
+            "poise": 34
+        },
+        {
+            "name": "Beast Champion Armor",
+            "weight": 17.5,
+            "poise": 34
+        },
+        {
+            "name": "Radahn's Lion Armor",
+            "weight": 17.5,
+            "poise": 34
+        },
+        {
+            "name": "Malformed Dragon Armor",
+            "weight": 16,
+            "poise": 31
+        },
+        {
+            "name": "Tree Sentinel Armor (Altered)",
+            "weight": 18.1,
+            "poise": 35
+        },
+        {
+            "name": "Chain Armor",
+            "weight": 8.8,
+            "poise": 17
+        },
+        {
+            "name": "Confessor Armor",
+            "weight": 8.3,
+            "poise": 16
+        },
+        {
+            "name": "Land of Reeds Armor",
+            "weight": 8.3,
+            "poise": 16
+        },
+        {
+            "name": "Drake Knight Armor (Altered)",
+            "weight": 8.3,
+            "poise": 16
+        },
+        {
+            "name": "Ivory-Draped Tabard",
+            "weight": 8.3,
+            "poise": 16
+        },
+        {
+            "name": "Night Maiden Armor",
+            "weight": 8.3,
+            "poise": 16
+        },
+        {
+            "name": "Land of Reeds Armor (Altered)",
+            "weight": 7.8,
+            "poise": 15
+        },
+        {
+            "name": "Thiollier's Garb (Altered)",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Astrologer Robe",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Preceptor's Long Gown",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Prophet Robe",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Rotten Gravekeeper Cloak",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Godskin Noble Robe",
+            "weight": 6.3,
+            "poise": 12
+        },
+        {
+            "name": "Gaius's Armor",
+            "weight": 20.1,
+            "poise": 38
+        },
+        {
+            "name": "Lionel's Armor",
+            "weight": 21.2,
+            "poise": 40
+        },
+        {
+            "name": "Astrologer Robe (Altered)",
+            "weight": 5.3,
+            "poise": 10
+        },
+        {
+            "name": "High Page Clothes",
+            "weight": 5.3,
+            "poise": 10
+        },
+        {
+            "name": "War Surgeon Gown",
+            "weight": 6.9,
+            "poise": 13
+        },
+        {
+            "name": "Ragged Armor (Altered)",
+            "weight": 8.5,
+            "poise": 16
+        },
+        {
+            "name": "Ronin's Armor",
+            "weight": 8.5,
+            "poise": 16
+        },
+        {
+            "name": "Armor of Solitude",
+            "weight": 24,
+            "poise": 45
+        },
+        {
+            "name": "Maliketh's Armor",
+            "weight": 12.8,
+            "poise": 24
+        },
+        {
+            "name": "Twinned Armor (Altered)",
+            "weight": 12.8,
+            "poise": 24
+        },
+        {
+            "name": "Royal Knight Armor (Altered)",
+            "weight": 15,
+            "poise": 28
+        },
+        {
+            "name": "Fire Monk Armor",
+            "weight": 11.8,
+            "poise": 22
+        },
+        {
+            "name": "Hoslow's Armor",
+            "weight": 11.8,
+            "poise": 22
+        },
+        {
+            "name": "Haligtree Knight Armor",
+            "weight": 11.8,
+            "poise": 22
+        },
+        {
+            "name": "Maliketh's Armor (Altered)",
+            "weight": 11.8,
+            "poise": 22
+        },
+        {
+            "name": "Omen Armor",
+            "weight": 23.1,
+            "poise": 43
+        },
+        {
+            "name": "High Page Clothes (Altered)",
+            "weight": 4.3,
+            "poise": 8
+        },
+        {
+            "name": "Traveling Maiden Robe (Altered)",
+            "weight": 4.3,
+            "poise": 8
+        },
+        {
+            "name": "Armor of Solitude (Altered)",
+            "weight": 23.2,
+            "poise": 43
+        },
+        {
+            "name": "Shadow Militiaman Armor",
+            "weight": 7.1,
+            "poise": 13
+        },
+        {
+            "name": "Freyja's Armor (Altered)",
+            "weight": 9.3,
+            "poise": 17
+        },
+        {
+            "name": "Carian Knight Armor",
+            "weight": 10.4,
+            "poise": 19
+        },
+        {
+            "name": "Twinned Armor",
+            "weight": 13.7,
+            "poise": 25
+        },
+        {
+            "name": "Fire Prelate Armor (Altered)",
+            "weight": 23.6,
+            "poise": 43
+        },
+        {
+            "name": "Verdigris Armor",
+            "weight": 25.9,
+            "poise": 47
+        },
+        {
+            "name": "Nomadic Merchant's Finery",
+            "weight": 7.2,
+            "poise": 13
+        },
+        {
+            "name": "Cleanrot Armor",
+            "weight": 15,
+            "poise": 27
+        },
+        {
+            "name": "Bloodhound Knight Armor",
+            "weight": 10.6,
+            "poise": 19
+        },
+        {
+            "name": "Briar Armor",
+            "weight": 11.8,
+            "poise": 21
+        },
+        {
+            "name": "Page Garb (Altered)",
+            "weight": 4.5,
+            "poise": 8
+        },
+        {
+            "name": "Briar Armor (Altered)",
+            "weight": 10.7,
+            "poise": 19
+        },
+        {
+            "name": "Bull-Goat Armor",
+            "weight": 26.5,
+            "poise": 47
+        },
+        {
+            "name": "Cleanrot Armor (Altered)",
+            "weight": 13.7,
+            "poise": 24
+        },
+        {
+            "name": "Depraved Perfumer Robe (Altered)",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Alberich's Robe",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Juvenile Scholar Robe",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Raya Lucarian Robe",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Blue Festive Garb",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Commoner's Garb (Altered)",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Commoner's Simple Garb (Altered)",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Consort's Robe",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Festive Garb",
+            "weight": 4.1,
+            "poise": 7
+        },
+        {
+            "name": "Armor of Night",
+            "weight": 7.1,
+            "poise": 12
+        },
+        {
+            "name": "Azur's Glintstone Robe",
+            "weight": 7.1,
+            "poise": 12
+        },
+        {
+            "name": "Leather Armor",
+            "weight": 7.1,
+            "poise": 12
+        },
+        {
+            "name": "Lusat's Robe",
+            "weight": 7.1,
+            "poise": 12
+        },
+        {
+            "name": "Depraved Perfumer Robe",
+            "weight": 5,
+            "poise": 8
+        },
+        {
+            "name": "Noble's Traveling Garb",
+            "weight": 6.3,
+            "poise": 10
+        },
+        {
+            "name": "Corhyn's Robe",
+            "weight": 6.3,
+            "poise": 10
+        },
+        {
+            "name": "Commoner's Garb",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Commoner's Simple Garb",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Fia's Robe",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Fell Omen Cloak",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Fur Raiment",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Queen's Robe",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Sage Robe",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Gravekeeper Cloak (Altered)",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Dancer's Dress",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Cloth Garb",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Deathbed Dress",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Fia's Robe (Altered)",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Prisoner Clothing",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Alberich's Robe (Altered)",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Royal Knight Armor",
+            "weight": 15.5,
+            "poise": 24
+        },
+        {
+            "name": "Braided Cord Robe",
+            "weight": 3.4,
+            "poise": 5
+        },
+        {
+            "name": "Dancer's Dress (Altered)",
+            "weight": 2.4,
+            "poise": 3
+        },
+        {
+            "name": "Millicent's Tunic",
+            "weight": 8.3,
+            "poise": 10
+        },
+        {
+            "name": "Mushroom Body",
+            "weight": 5.1,
+            "poise": 5
+        }
+    ],
+    "helms": [
+        {
+            "name": "Dane's Hat",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Gaius's Helm",
+            "weight": 8.6,
+            "poise": 12
+        },
+        {
+            "name": "Oathseeker Knight Helm",
+            "weight": 4.4,
+            "poise": 7
+        },
+        {
+            "name": "Verdigris Helm",
+            "weight": 11.1,
+            "poise": 15
+        },
+        {
+            "name": "Pelt of Ralva",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Fang Helm",
+            "weight": 2.7,
+            "poise": 4
+        },
+        {
+            "name": "Thiollier's Mask",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "High Priest Hat",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Caterpillar Mask",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Dancer's Hood",
+            "weight": 1,
+            "poise": 1
+        },
+        {
+            "name": "Helm of Night",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Igon's Helm",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Igon's Helm (Altered)",
+            "weight": 3,
+            "poise": 5
+        },
+        {
+            "name": "Wise Man's Mask",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Freyja's Helm",
+            "weight": 5.8,
+            "poise": 8
+        },
+        {
+            "name": "Helm of Solitude",
+            "weight": 10.3,
+            "poise": 14
+        },
+        {
+            "name": "Messmer Soldier Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Black Knight Helm",
+            "weight": 5.9,
+            "poise": 9
+        },
+        {
+            "name": "Rakshasa Helm",
+            "weight": 5.5,
+            "poise": 9
+        },
+        {
+            "name": "Fire Knight Helm",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Death Mask Helm",
+            "weight": 3.4,
+            "poise": 6
+        },
+        {
+            "name": "Winged Serpent Helm",
+            "weight": 4.6,
+            "poise": 7
+        },
+        {
+            "name": "Salza's Hood",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Leather Headband",
+            "weight": 1,
+            "poise": 2
+        },
+        {
+            "name": "Leather Crown",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Death Knight Helm",
+            "weight": 4.6,
+            "poise": 7
+        },
+        {
+            "name": "Curseblade Mask",
+            "weight": 2.2,
+            "poise": 4
+        },
+        {
+            "name": "Messmer's Helm",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Messmer's Helm (Altered)",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Gravebird Helm",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Common Soldier Helm",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Horned Warrior Helm",
+            "weight": 4.6,
+            "poise": 7
+        },
+        {
+            "name": "Divine Beast Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Divine Bird Helm",
+            "weight": 4.6,
+            "poise": 8
+        },
+        {
+            "name": "Rellana's Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Young Lion's Helm",
+            "weight": 6.4,
+            "poise": 10
+        },
+        {
+            "name": "Circlet of Light",
+            "weight": 1,
+            "poise": 5
+        },
+        {
+            "name": "Shadow Militiaman Helm",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Divine Beast Head",
+            "weight": 10.6,
+            "poise": 13
+        },
+        {
+            "name": "St. Trina's Blossom",
+            "weight": 1,
+            "poise": 2
+        },
+        {
+            "name": "Crucible Hammer-Helm",
+            "weight": 7.5,
+            "poise": 11
+        },
+        {
+            "name": "Greatjar",
+            "weight": 12.3,
+            "poise": 14
+        },
+        {
+            "name": "Imp Head (Lion)",
+            "weight": 8.1,
+            "poise": 13
+        },
+        {
+            "name": "Alberich's Pointed Hat",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Alberich's Pointed Hat (Altered)",
+            "weight": 1,
+            "poise": 1
+        },
+        {
+            "name": "Albinauric Mask",
+            "weight": 3.8,
+            "poise": 5
+        },
+        {
+            "name": "All-Knowing Helm",
+            "weight": 4.6,
+            "poise": 7
+        },
+        {
+            "name": "Aristocrat Hat",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Aristocrat Headband",
+            "weight": 1.2,
+            "poise": 2
+        },
+        {
+            "name": "Ash-of-War Scarab",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Astrologer Hood",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Azur's Glintstone Crown",
+            "weight": 3.6,
+            "poise": 4
+        },
+        {
+            "name": "Bandit Mask",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Banished Knight Helm",
+            "weight": 7.5,
+            "poise": 11
+        },
+        {
+            "name": "Banished Knight Helm (Altered)",
+            "weight": 7.1,
+            "poise": 11
+        },
+        {
+            "name": "Beast Champion Helm",
+            "weight": 7.5,
+            "poise": 11
+        },
+        {
+            "name": "Black Dumpling",
+            "weight": 2.7,
+            "poise": 4
+        },
+        {
+            "name": "Black Hood",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Black Knife Hood",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Black Wolf Mask",
+            "weight": 5.9,
+            "poise": 9
+        },
+        {
+            "name": "Blackflame Monk Hood",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Blackguard's Iron Mask",
+            "weight": 6.2,
+            "poise": 9
+        },
+        {
+            "name": "Bloodhound Knight Helm",
+            "weight": 4.6,
+            "poise": 6
+        },
+        {
+            "name": "Bloodsoaked Mask",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Blue Cloth Cowl",
+            "weight": 2.7,
+            "poise": 4
+        },
+        {
+            "name": "Blue Festive Hood",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Blue Silver Mail Hood",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Brave's Cord Circlet",
+            "weight": 1,
+            "poise": 2
+        },
+        {
+            "name": "Brave's Leather Helm",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Briar Helm",
+            "weight": 5.1,
+            "poise": 9
+        },
+        {
+            "name": "Bull-Goat Helm",
+            "weight": 11.3,
+            "poise": 15
+        },
+        {
+            "name": "Carian Knight Helm",
+            "weight": 4.6,
+            "poise": 6
+        },
+        {
+            "name": "Cerulean Tear Scarab",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Chain Coif",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Champion Headband",
+            "weight": 2.7,
+            "poise": 5
+        },
+        {
+            "name": "Cleanrot Helm",
+            "weight": 6.4,
+            "poise": 9
+        },
+        {
+            "name": "Cleanrot Helm (Altered)",
+            "weight": 5.5,
+            "poise": 7
+        },
+        {
+            "name": "Commoner's Headband",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Commoner's Headband (Altered)",
+            "weight": 0.7,
+            "poise": 1
+        },
+        {
+            "name": "Confessor Hood",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Confessor Hood (Altered)",
+            "weight": 2.7,
+            "poise": 3
+        },
+        {
+            "name": "Consort's Mask",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Crimson Hood",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Crimson Tear Scarab",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Crucible Axe Helm",
+            "weight": 6.6,
+            "poise": 11
+        },
+        {
+            "name": "Crucible Tree Helm",
+            "weight": 6.6,
+            "poise": 11
+        },
+        {
+            "name": "Cuckoo Knight Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Depraved Perfumer Headscarf",
+            "weight": 2.1,
+            "poise": 3
+        },
+        {
+            "name": "Diallos's Mask",
+            "weight": 4.6,
+            "poise": 7
+        },
+        {
+            "name": "Drake Knight Helm",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Drake Knight Helm (Altered)",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Duelist Helm",
+            "weight": 6.2,
+            "poise": 10
+        },
+        {
+            "name": "Eccentric's Hood",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Eccentric's Hood (Altered)",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Elden Lord Crown",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Envoy Crown",
+            "weight": 3.8,
+            "poise": 4
+        },
+        {
+            "name": "Exile Hood",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Festive Hood",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Festive Hood (Altered)",
+            "weight": 1,
+            "poise": 1
+        },
+        {
+            "name": "Fia's Hood",
+            "weight": 1.7,
+            "poise": 2
+        },
+        {
+            "name": "Finger Maiden Fillet",
+            "weight": 2.2,
+            "poise": 4
+        },
+        {
+            "name": "Fingerprint Helm",
+            "weight": 4.6,
+            "poise": 8
+        },
+        {
+            "name": "Fire Monk Hood",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Fire Prelate Helm",
+            "weight": 10.6,
+            "poise": 14
+        },
+        {
+            "name": "Foot Soldier Cap",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Foot Soldier Helm",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Foot Soldier Helmet",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Gelmir Knight Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Gilded Foot Soldier Cap",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Glintstone Scarab",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Godrick Knight Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Godrick Soldier Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Godskin Apostle Hood",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Godskin Noble Hood",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Grass Hair Ornament",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Great Horned Headband",
+            "weight": 3.3,
+            "poise": 4
+        },
+        {
+            "name": "Greathelm",
+            "weight": 5.9,
+            "poise": 9
+        },
+        {
+            "name": "Greathood",
+            "weight": 5.1,
+            "poise": 5
+        },
+        {
+            "name": "Guardian Mask",
+            "weight": 3.8,
+            "poise": 5
+        },
+        {
+            "name": "Guilty Hood",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Haima Glintstone Crown",
+            "weight": 2.7,
+            "poise": 4
+        },
+        {
+            "name": "Haligtree Helm",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Haligtree Knight Helm",
+            "weight": 5.1,
+            "poise": 7
+        },
+        {
+            "name": "Hierodas Glintstone Crown",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "High Page Hood",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Highwayman Hood",
+            "weight": 3.3,
+            "poise": 4
+        },
+        {
+            "name": "Hoslow's Helm",
+            "weight": 5.5,
+            "poise": 8
+        },
+        {
+            "name": "Iji's Mirrorhelm",
+            "weight": 7.5,
+            "poise": 7
+        },
+        {
+            "name": "Imp Head (Cat)",
+            "weight": 8.1,
+            "poise": 10
+        },
+        {
+            "name": "Imp Head (Corpse)",
+            "weight": 8.1,
+            "poise": 10
+        },
+        {
+            "name": "Imp Head (Elder)",
+            "weight": 8.1,
+            "poise": 10
+        },
+        {
+            "name": "Imp Head (Fanged)",
+            "weight": 8.1,
+            "poise": 10
+        },
+        {
+            "name": "Imp Head (Long-Tongued)",
+            "weight": 8.1,
+            "poise": 10
+        },
+        {
+            "name": "Imp Head (Wolf)",
+            "weight": 8.1,
+            "poise": 10
+        },
+        {
+            "name": "Incantation Scarab",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Iron Helmet",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Iron Kasa",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Jar",
+            "weight": 6.8,
+            "poise": 10
+        },
+        {
+            "name": "Juvenile Scholar Cap",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Kaiden Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Karolos Glintstone Crown",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Knight Helm",
+            "weight": 4.6,
+            "poise": 8
+        },
+        {
+            "name": "Land of Reeds Helm",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Lazuli Glintstone Crown",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Leyndell Knight Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Leyndell Soldier Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Lionel's Helm",
+            "weight": 9.1,
+            "poise": 13
+        },
+        {
+            "name": "Lusat's Glintstone Crown",
+            "weight": 3.6,
+            "poise": 4
+        },
+        {
+            "name": "Malenia's Winged Helm",
+            "weight": 4,
+            "poise": 6
+        },
+        {
+            "name": "Malformed Dragon Helm",
+            "weight": 6.8,
+            "poise": 10
+        },
+        {
+            "name": "Maliketh's Helm",
+            "weight": 5.5,
+            "poise": 8
+        },
+        {
+            "name": "Marais Mask",
+            "weight": 2.2,
+            "poise": 4
+        },
+        {
+            "name": "Marionette Soldier Birdhelm",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Marionette Soldier Helm",
+            "weight": 3.8,
+            "poise": 6
+        },
+        {
+            "name": "Mask of Confidence",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Mushroom Crown",
+            "weight": 9.1,
+            "poise": 10
+        },
+        {
+            "name": "Mushroom Head",
+            "weight": 2.2,
+            "poise": 2
+        },
+        {
+            "name": "Navy Hood",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Night Maiden Twin Crown",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Night's Cavalry Helm",
+            "weight": 5.5,
+            "poise": 8
+        },
+        {
+            "name": "Night's Cavalry Helm (Altered)",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Nomadic Merchant's Chapeau",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Nox Mirrorhelm",
+            "weight": 7.5,
+            "poise": 6
+        },
+        {
+            "name": "Nox Monk Hood",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Nox Monk Hood (Altered)",
+            "weight": 2.7,
+            "poise": 3
+        },
+        {
+            "name": "Nox Swordstress Crown",
+            "weight": 3.3,
+            "poise": 5
+        },
+        {
+            "name": "Nox Swordstress Crown (Altered)",
+            "weight": 2.7,
+            "poise": 2
+        },
+        {
+            "name": "Octopus Head",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Okina Mask",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "Old Aristocrat Cowl",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Olivinus Glintstone Crown",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Omen Helm",
+            "weight": 9.9,
+            "poise": 14
+        },
+        {
+            "name": "Omensmirk Mask",
+            "weight": 3,
+            "poise": 6
+        },
+        {
+            "name": "Page Hood",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Perfumer Hood",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Preceptor's Big Hat",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Prisoner Iron Mask",
+            "weight": 8.6,
+            "poise": 12
+        },
+        {
+            "name": "Prophet Blindfold",
+            "weight": 1,
+            "poise": 1
+        },
+        {
+            "name": "Pumpkin Helm",
+            "weight": 12.3,
+            "poise": 11
+        },
+        {
+            "name": "Queen's Crescent Crown",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Radahn Soldier Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Radahn's Redmane Helm",
+            "weight": 7.5,
+            "poise": 11
+        },
+        {
+            "name": "Radiant Gold Mask",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Ragged Hat",
+            "weight": 3.3,
+            "poise": 4
+        },
+        {
+            "name": "Ragged Hat (Altered)",
+            "weight": 3,
+            "poise": 3
+        },
+        {
+            "name": "Raging Wolf Helm",
+            "weight": 4.4,
+            "poise": 7
+        },
+        {
+            "name": "Raya Lucarian Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Redmane Knight Helm",
+            "weight": 5.1,
+            "poise": 8
+        },
+        {
+            "name": "Rotten Duelist Helm",
+            "weight": 6.4,
+            "poise": 9
+        },
+        {
+            "name": "Royal Knight Helm",
+            "weight": 6.6,
+            "poise": 9
+        },
+        {
+            "name": "Royal Remains Helm",
+            "weight": 4.6,
+            "poise": 7
+        },
+        {
+            "name": "Ruler's Mask",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Sacred Crown Helm",
+            "weight": 3.6,
+            "poise": 5
+        },
+        {
+            "name": "Sage Hood",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Sanguine Noble Hood",
+            "weight": 1.4,
+            "poise": 2
+        },
+        {
+            "name": "Scaled Helm",
+            "weight": 6.8,
+            "poise": 11
+        },
+        {
+            "name": "Shining Horned Headband",
+            "weight": 3.3,
+            "poise": 4
+        },
+        {
+            "name": "Silver Tear Mask",
+            "weight": 4.6,
+            "poise": 6
+        },
+        {
+            "name": "Skeletal Mask",
+            "weight": 3,
+            "poise": 4
+        },
+        {
+            "name": "Snow Witch Hat",
+            "weight": 2.2,
+            "poise": 3
+        },
+        {
+            "name": "Spellblade's Pointed Hat",
+            "weight": 1.5,
+            "poise": 2
+        },
+        {
+            "name": "Traveler's Hat",
+            "weight": 1.7,
+            "poise": 3
+        },
+        {
+            "name": "Traveling Maiden Hood",
+            "weight": 1.6,
+            "poise": 3
+        },
+        {
+            "name": "Tree Sentinel Helm",
+            "weight": 8.1,
+            "poise": 12
+        },
+        {
+            "name": "Twinned Helm",
+            "weight": 5.1,
+            "poise": 7
+        },
+        {
+            "name": "Twinsage Glintstone Crown",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Vagabond Knight Helm",
+            "weight": 4,
+            "poise": 7
+        },
+        {
+            "name": "Veteran's Helm",
+            "weight": 8.1,
+            "poise": 12
+        },
+        {
+            "name": "Vulgar Militia Helm",
+            "weight": 3.6,
+            "poise": 6
+        },
+        {
+            "name": "White Mask",
+            "weight": 3.2,
+            "poise": 5
+        },
+        {
+            "name": "Witch's Glintstone Crown",
+            "weight": 5.1,
+            "poise": 6
+        },
+        {
+            "name": "Zamor Mask",
+            "weight": 3.8,
+            "poise": 6
+        }
+    ]
+}
