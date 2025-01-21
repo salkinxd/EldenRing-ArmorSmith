@@ -4,19 +4,7 @@ import { createInterface } from 'readline';
 interface ArmorPiece {
   name: string;
   weight: number;
-  poise: number;
-  phy: number;
-  vsStrike: number;
-  vsSlash: number;
-  vsPierce: number;
-  magic: number;
-  fire: number;
-  ligt: number;
-  holy: number;
-  immunity: number;
-  robustness: number;
-  focus: number;
-  vitality: number;
+  [stat: string]: number | string; // Allow any stat property
 }
 
 interface ArmorData {
@@ -26,7 +14,6 @@ interface ArmorData {
   legs: ArmorPiece[];
 }
 
-// Load your armor data
 const armorData: ArmorData = require('./armorData.json');
 
 // Roll Types
@@ -52,21 +39,23 @@ function askQuestion(question: string): Promise<string> {
 
 // Function to filter armor pieces
 function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number): ArmorPiece[] {
-    return pieces.filter(piece => piece.weight <= maxWeight);
+    return pieces.filter(piece => typeof piece.weight === 'number' && piece.weight <= maxWeight);
 }
 
 // Function to calculate stat scores
-function calculateStatScores(combination: ArmorPiece[]): { negationScore: number; resistanceScore: number } {
-  let negationScore = 0;
-  let resistanceScore = 0;
+function calculateStatScores(combination: ArmorPiece[], stats: string[]): { [stat: string]: number } {
+  const scores: { [stat: string]: number } = {};
 
-  for (const piece of combination) {
-    negationScore += piece.phy + piece.vsStrike + piece.vsSlash + piece.vsPierce +
-                     piece.magic + piece.fire + piece.ligt + piece.holy;
-    resistanceScore += piece.immunity + piece.robustness + piece.focus + piece.vitality;
+  for (const stat of stats) {
+    scores[stat] = 0;
+    for (const piece of combination) {
+      if (typeof piece[stat] === 'number') {
+        scores[stat] += piece[stat] as number;
+      }
+    }
   }
 
-  return { negationScore, resistanceScore };
+  return scores;
 }
 
 // Function to find armor combinations
@@ -74,9 +63,10 @@ function findArmorCombinations(
   maxEquipLoad: number,
   currentEquipLoad: number,
   includedTypes: string[],
-  rollType: RollType
-): { combination: ArmorPiece[]; totalPoise: number; headroom: number; negationScore: number; resistanceScore: number }[] {
-  const combinations: { combination: ArmorPiece[]; totalPoise: number; headroom: number; negationScore: number; resistanceScore: number }[] = [];
+  rollType: RollType,
+  stats: string[]
+): { combination: ArmorPiece[]; statScores: { [stat: string]: number }; headroom: number }[] {
+  const combinations: { combination: ArmorPiece[]; statScores: { [stat: string]: number }; headroom: number }[] = [];
 
   // Generate combinations recursively
   const generateCombinations = (
@@ -85,9 +75,10 @@ function findArmorCombinations(
     currentIndex: number
   ) => {
     if (currentIndex === types.length) {
-      const armorWeight = currentCombination.reduce((sum, piece) => sum + piece.weight, 0);
+      const armorWeight = currentCombination.reduce((sum, piece) => {
+        return typeof piece.weight === 'number' ? sum + piece.weight : sum;
+      }, 0);
       const totalWeight = armorWeight + currentEquipLoad;
-      const totalPoise = currentCombination.reduce((sum, piece) => sum + piece.poise, 0);
 
       // Check weight based on roll type
       let isWeightValid = false;
@@ -109,8 +100,8 @@ function findArmorCombinations(
 
       if (isWeightValid) {
         const headroom = maxAllowedWeight - totalWeight;
-        const { negationScore, resistanceScore } = calculateStatScores(currentCombination);
-        combinations.push({ combination: [...currentCombination], totalPoise, headroom, negationScore, resistanceScore });
+        const statScores = calculateStatScores(currentCombination, stats);
+        combinations.push({ combination: [...currentCombination], statScores, headroom });
       }
       return;
     }
@@ -142,30 +133,19 @@ function findArmorCombinations(
 
   generateCombinations(includedTypes, [], 0);
 
-  // Group combinations by poise
-  const combinationsByPoise: { [poise: number]: { combination: ArmorPiece[]; headroom: number; negationScore: number; resistanceScore: number }[] } = {};
-  for (const { combination, totalPoise, headroom, negationScore, resistanceScore } of combinations) {
-    if (!combinationsByPoise[totalPoise]) {
-      combinationsByPoise[totalPoise] = [];
+  // Sort combinations by the specified stats
+  combinations.sort((a, b) => {
+    for (const stat of stats) {
+        const scoreA = a.statScores[stat] || 0;
+        const scoreB = b.statScores[stat] || 0;
+        if (scoreA !== scoreB) {
+            return scoreB - scoreA; // Sort descending
+        }
     }
-    combinationsByPoise[totalPoise].push({ combination, headroom, negationScore, resistanceScore });
-  }
-
-  // Find the highest poise
-  const highestPoise = Math.max(...Object.keys(combinationsByPoise).map(Number));
-
-  // Get combinations with the highest poise
-  const highestPoiseCombinations = combinationsByPoise[highestPoise] || [];
-
-  // Sort combinations with the highest poise by weighted score (descending)
-  highestPoiseCombinations.sort((a, b) => {
-    const scoreA = (2 * a.negationScore) + a.resistanceScore + a.headroom;
-    const scoreB = (2 * b.negationScore) + b.resistanceScore + b.headroom;
-    return scoreB - scoreA;
+    return b.headroom - a.headroom;
   });
 
-  // Return sorted combinations with the highest poise
-  return highestPoiseCombinations.map(c => ({ ...c, totalPoise: highestPoise }));
+  return combinations;
 }
 
 // Main function
@@ -198,24 +178,34 @@ async function main() {
       rollType = RollType.Medium;
   }
 
+  const statsStr = await askQuestion(
+    "Enter the stats to prioritize (e.g., 'poise negation resistance'), separated by spaces: "
+  );
+  const stats = statsStr.toLowerCase().split(" ");
+
   const bestCombinations = findArmorCombinations(
     maxEquipLoad,
     currentEquipLoad,
     includedTypes,
-    rollType
+    rollType,
+    stats
   );
 
   if (bestCombinations.length > 0) {
-    console.log("\nArmor Combinations with Highest Poise (Ranked by Weighted Score):");
-    for (const { combination, totalPoise, headroom, negationScore, resistanceScore } of bestCombinations) {
+    console.log(`\nArmor Combinations (Ranked by ${stats.join(", ")}):`);
+    for (const { combination, statScores, headroom } of bestCombinations) {
       console.log(`\nCombination:`);
       combination.forEach((piece) => {
-        console.log(
-          `${piece.name} - Weight: ${piece.weight}, Poise: ${piece.poise}, Phy: ${piece.phy}, VS Strike: ${piece.vsStrike}, VS Slash: ${piece.vsSlash}, VS Pierce: ${piece.vsPierce}, Magic: ${piece.magic}, Fire: ${piece.fire}, Lightning: ${piece.ligt}, Holy: ${piece.holy}, Immunity: ${piece.immunity}, Robustness: ${piece.robustness}, Focus: ${piece.focus}, Vitality: ${piece.vitality}`
-        );
+        const pieceStats = Object.entries(piece)
+          .filter(([key]) => key !== 'name')
+          .map(([key, value]) => `${key}: ${value}`)
+          .join(', ');
+        console.log(`${piece.name} - ${pieceStats}`);
       });
 
-      const armorWeight = combination.reduce((sum, piece) => sum + piece.weight, 0);
+      const armorWeight = combination.reduce((sum, piece) => {
+        return typeof piece.weight === 'number' ? sum + piece.weight : sum;
+      }, 0);
       const totalWeight = armorWeight + currentEquipLoad;
 
       // Calculate weight limits for the roll type
@@ -235,10 +225,12 @@ async function main() {
       console.log(`Current Equip Load: ${currentEquipLoad}`);
       console.log(`Armor Weight: ${armorWeight}`);
       console.log(`Total Weight (with current equip load): ${totalWeight}`);
-      console.log(`Total Poise: ${totalPoise}`);
       console.log(`Headroom for ${rollTypeStr} roll: ${headroom.toFixed(2)} (Max allowed: ${maxAllowedWeight.toFixed(2)})`);
-      console.log(`Negation Score: ${negationScore}`);
-      console.log(`Resistance Score: ${resistanceScore}`);
+
+      // Log the scores for the specified stats
+      for (const stat of stats) {
+        console.log(`${stat}: ${statScores[stat]}`);
+      }
     };
   } else {
     console.log("No suitable armor combinations found.");
