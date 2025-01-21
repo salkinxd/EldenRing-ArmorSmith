@@ -169,10 +169,32 @@ async function main() {
           `${piece.name} - Weight: ${piece.weight}, Poise: ${piece.poise}`
         );
       });
-      const totalWeight = combination.reduce((sum, piece) => sum + piece.weight, 0);
+
+      const armorWeight = combination.reduce((sum, piece) => sum + piece.weight, 0);
+      const totalWeight = armorWeight + currentEquipLoad;
       const totalPoise = combination.reduce((sum, piece) => sum + piece.poise, 0);
-      console.log(`Total Weight: ${totalWeight}`);
+
+      // Calculate weight limits for the roll type
+      let maxAllowedWeight: number;
+      switch (rollType) {
+        case RollType.Light:
+          maxAllowedWeight = maxEquipLoad * 0.299;
+          break;
+        case RollType.Medium:
+          maxAllowedWeight = maxEquipLoad * 0.699;
+          break;
+        case RollType.Heavy:
+          maxAllowedWeight = maxEquipLoad * 0.999;
+          break;
+      }
+
+      const headroom = maxAllowedWeight - totalWeight;
+
+      console.log(`Current Equip Load: ${currentEquipLoad}`);
+      console.log(`Armor Weight: ${armorWeight}`);
+      console.log(`Total Weight (with current equip load): ${totalWeight}`);
       console.log(`Total Poise: ${totalPoise}`);
+      console.log(`Headroom for ${rollTypeStr} roll: ${headroom.toFixed(2)} (Max allowed: ${maxAllowedWeight.toFixed(2)})`);
     });
   } else {
     console.log("No suitable armor combinations found.");
