@@ -38,13 +38,13 @@ function askQuestion(question: string): Promise<string> {
   });
 }
 
-// Function to filter armor pieces
+// Function to filter armor pieces (Corrected for Case-Insensitivity)
 function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number, availabilityFilter: string): ArmorPiece[] {
-    return pieces.filter(piece => 
-        typeof piece.weight === 'number' && 
-        piece.weight <= maxWeight &&
-        (availabilityFilter === 'all' || piece.available === availabilityFilter)
-    );
+  return pieces.filter(piece => 
+      typeof piece.weight === 'number' && 
+      piece.weight <= maxWeight &&
+      (availabilityFilter === 'all' || piece.available.toLowerCase() === availabilityFilter.toLowerCase()) // Case-insensitive comparison
+  );
 }
 
 // Function to calculate stat scores
