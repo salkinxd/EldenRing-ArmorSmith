@@ -1,16 +1,26 @@
 import { findArmorCombinations } from './functions';
-import { askQuestion, getNumberInput, getRollTypeInput, getStringArrayInput } from './input';
+import {
+    initializeReadline,
+    closeReadline,
+    getValidNumberInput,
+    getValidRollTypeInput,
+    getValidArmorTypesInput,
+    getValidStatsInput,
+    getValidNumberInRangeInput,
+    getValidAvailabilityInput
+} from './input';
 import { displayCombinations } from './output';
 
 // Main function
 async function main() {
-    const maxEquipLoad = await getNumberInput("Enter your maximum equip load: ");
-    const currentEquipLoad = await getNumberInput("Enter your current equip load (excluding armor): ");
-    const includedTypes = await getStringArrayInput("Enter the armor types to include (e.g., 'helm chest gauntlets legs'), separated by spaces: ");
-    const rollType = await getRollTypeInput();
-    const stats = await getStringArrayInput("Enter the stats to prioritize (e.g., 'poise negation resistance'), separated by spaces: ");
-    const numCombinations = await getNumberInput("How many top combinations do you want to see? ");
-    const availabilityFilter = await askQuestion("Enter availability filter ('all', 'Base Game', or 'Shadow of the Erdtree DLC'): ");
+    initializeReadline();
+    const maxEquipLoad = await getValidNumberInput("Enter your maximum equip load: ");
+    const currentEquipLoad = await getValidNumberInput("Enter your current equip load (excluding armor): ");
+    const includedTypes = await getValidArmorTypesInput();
+    const rollType = await getValidRollTypeInput();
+    const stats = await getValidStatsInput();
+    const numCombinations = await getValidNumberInRangeInput("How many top combinations do you want to see? ", 1, 100);
+    const availabilityFilter = await getValidAvailabilityInput();
 
     const bestCombinations = findArmorCombinations(
         maxEquipLoad,
@@ -21,9 +31,9 @@ async function main() {
         availabilityFilter
     );
 
-    displayCombinations(bestCombinations, numCombinations, stats, currentEquipLoad, rollType, maxEquipLoad);
+    displayCombinations(bestCombinations, numCombinations, stats, currentEquipLoad, rollType, maxEquipLoad, availabilityFilter);
 
-    process.exit();
+    closeReadline();
 }
 
 main();
