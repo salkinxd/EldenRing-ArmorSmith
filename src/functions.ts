@@ -1,12 +1,11 @@
 import { ArmorPiece, RollType } from './types';
-import { armorData } from './armor-data'; // Import armorData
+import { armorData } from './armor-data';
 
 // Function to filter armor pieces
 export function filterArmorPieces(pieces: ArmorPiece[], maxWeight: number, availabilityFilter: string): ArmorPiece[] {
     return pieces.filter(piece =>
-        typeof piece.weight === 'number' &&
         piece.weight <= maxWeight &&
-        (availabilityFilter === 'all' || piece.available.toLowerCase() === availabilityFilter.toLowerCase()) // Case-insensitive comparison
+        (availabilityFilter === 'all' || piece.available.toLowerCase() === availabilityFilter.toLowerCase())
     );
 }
 
@@ -17,16 +16,54 @@ export function calculateStatScores(combination: ArmorPiece[], stats: string[]):
     for (const stat of stats) {
         scores[stat] = 0;
         for (const piece of combination) {
-            if (stat === 'negation') {
-                scores[stat] += (piece['phy'] as number || 0) + (piece['vsStrike'] as number || 0) +
-                    (piece['vsSlash'] as number || 0) + (piece['vsPierce'] as number || 0) +
-                    (piece['magic'] as number || 0) + (piece['fire'] as number || 0) +
-                    (piece['ligt'] as number || 0) + (piece['holy'] as number || 0);
-            } else if (stat === 'resistance') {
-                scores[stat] += (piece['immunity'] as number || 0) + (piece['robustness'] as number || 0) +
-                    (piece['focus'] as number || 0) + (piece['vitality'] as number || 0);
-            } else if (typeof piece[stat] === 'number') {
-                scores[stat] += piece[stat] as number;
+            // Use a switch statement to handle each stat correctly
+            switch (stat) {
+                case 'poise':
+                    scores[stat] += piece.poise;
+                    break;
+                case 'physical':
+                    scores[stat] += piece.physical;
+                    break;
+                case 'vsStrike':
+                    scores[stat] += piece.vsStrike;
+                    break;
+                case 'vsSlash':
+                    scores[stat] += piece.vsSlash;
+                    break;
+                case 'vsPierce':
+                    scores[stat] += piece.vsPierce;
+                    break;
+                case 'magic':
+                    scores[stat] += piece.magic;
+                    break;
+                case 'fire':
+                    scores[stat] += piece.fire;
+                    break;
+                case 'lightning':
+                    scores[stat] += piece.lightning;
+                    break;
+                case 'holy':
+                    scores[stat] += piece.holy;
+                    break;
+                case 'immunity':
+                    scores[stat] += piece.immunity;
+                    break;
+                case 'robustness':
+                    scores[stat] += piece.robustness;
+                    break;
+                case 'focus':
+                    scores[stat] += piece.focus;
+                    break;
+                case 'vitality':
+                    scores[stat] += piece.vitality;
+                    break;
+                case 'negation':
+                    scores[stat] += piece.physical + piece.vsStrike + piece.vsSlash + piece.vsPierce +
+                                     piece.magic + piece.fire + piece.lightning + piece.holy;
+                    break;
+                case 'resistance':
+                    scores[stat] += piece.immunity + piece.robustness + piece.focus + piece.vitality;
+                    break;
             }
         }
     }
@@ -52,9 +89,7 @@ export function findArmorCombinations(
         currentIndex: number
     ) => {
         if (currentIndex === types.length) {
-            const armorWeight = currentCombination.reduce((sum, piece) => {
-                return typeof piece.weight === 'number' ? sum + piece.weight : sum;
-            }, 0);
+            const armorWeight = currentCombination.reduce((sum, piece) => sum + piece.weight, 0);
             const totalWeight = armorWeight + currentEquipLoad;
 
             // Check weight based on roll type
