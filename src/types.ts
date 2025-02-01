@@ -5,11 +5,11 @@ export enum RollType {
     Heavy,
 }
 
-// Data
+// Armor Piece Data
 export interface ArmorPiece {
     name: string;
     weight: number;
-    available: string; // Add "available" property
+    available: string;
     [stat: string]: number | string; // Allow any stat property
 }
 
