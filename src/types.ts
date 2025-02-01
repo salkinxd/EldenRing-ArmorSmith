@@ -10,7 +10,19 @@ export interface ArmorPiece {
     name: string;
     weight: number;
     available: string;
-    [stat: string]: number | string; // Allow any stat property
+    poise: number;
+    physical: number;
+    vsStrike: number;
+    vsSlash: number;
+    vsPierce: number;
+    magic: number;
+    fire: number;
+    lightning: number;
+    holy: number;
+    immunity: number;
+    robustness: number;
+    focus: number;
+    vitality: number;
 }
 
 export interface ArmorData {
@@ -19,3 +31,22 @@ export interface ArmorData {
     gauntlets: ArmorPiece[];
     legs: ArmorPiece[];
 }
+
+// Valid stat names
+export const validStats = [
+    "poise",
+    "negation", // Composite stat
+    "resistance", // Composite stat
+    "physical",
+    "vsStrike",
+    "vsSlash",
+    "vsPierce",
+    "magic",
+    "fire",
+    "lightning",
+    "holy",
+    "immunity",
+    "robustness",
+    "focus",
+    "vitality"
+];
